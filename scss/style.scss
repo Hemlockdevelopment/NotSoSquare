@@ -1,0 +1,275 @@
+/* 
+    Created on : Jul 24, 2016, 11:51:55 AM
+    Author     : Hemlock Devtop
+*/
+
+@import 'media.scss';
+
+
+/********** MIXINS **********/
+a.link, a.nav:visited, a.link:hover, a.nav:active {
+    text-decoration: none;    
+}
+
+
+/********** MAIN BLOCKS **********/
+#container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#topContainer{
+    margin: 0 auto;
+    min-width: 1280px;
+    max-width: 1680px;
+    min-height: 100%;
+    min-height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+}
+
+
+/************ HEADER ************/
+header{
+    @extend .flexrow;
+    width: 100%;
+    right: 0xp;
+    align-item: center;
+    margin-top: 20px;
+    
+    #headerLogo{
+        width: 200px;
+        height: 150px;
+        @extend .flexrow;
+        
+        img{
+            width: 150px;
+            height: 150px;
+        }
+    }
+    
+    #headerQuote{
+        width: 600px;
+    }
+    
+    #headerMenu{
+        margin-left: auto;
+        z-index: 100;
+        height: 50px;
+        
+        ul{
+        @extend .flexlistrow;
+        @extend .flexMiddle;
+        min-width: 400px;
+        
+        li{
+            vertical-align: middle;
+            font-size: 32px;
+            @extend .bold;
+        }
+        
+        span{
+            margin-left: 5px;
+        }
+    }
+        
+    }
+    
+    h2{
+        color: $primary_color;
+    }
+    
+    
+    
+}
+
+/************ ABOUT CONTACT **********/
+#aboutContact{
+    background-color: white;
+    border-radius: 0px 0px 15px 15px;
+    padding: 100px 50px 10px 50px;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    width: 400px;
+    display: none;
+    z-index: 99;
+}
+
+#infoAbout, #infoContact{
+    display: none;
+}
+
+#aboutContact ul{
+        @extend .flexlistrow;
+        @extend .flexRight;
+        
+        li{
+            margin-top: 4px;
+            margin-left: 2px;
+        }
+}
+
+
+/************ CONTENT ************/
+#content{
+    @extend .flexrow;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    
+    h2{
+        color: white;
+        font-size: 34px;
+        padding: 10px 0px;
+    }
+    
+    .contentSection{
+        @extend .flexcollum;
+        min-width: 200px;
+        width: 275px;
+        margin-left: 30px;
+        margin-right: 30px;
+        height: 100%;
+        -webkit-transform: skew(-20deg);
+        -moz-transform: skew(-20deg);
+        -o-transform: skew(-20deg);
+    }
+    
+    .contentSectionBody{
+        height: 100%;
+    }
+    
+    .contentSectionQuote{
+        text-align: right;
+        min-height: 40px;
+    }
+    
+    .contentSectionLabel{
+        text-align: center;
+        background-color: $primary_color;
+        
+    }
+    
+    
+    p{
+        -webkit-transform: skew(20deg);
+        -moz-transform: skew(20deg);
+        -o-transform: skew(20deg);
+    }
+    
+    .contentSectionVideo{
+        min-height: 400px;
+        height: 100%;
+        max-height: 500px;
+        border: 1px solid #000;
+        cursor: crosshair;
+        position: relative;
+        background-color: $secondary_color;
+    }
+    
+    .quoteLast .contentSectionVideo {
+        border-radius: 15px 15px 0px 0px;
+    }
+    
+    .quoteFirst .contentSectionVideo {
+        border-radius: 0px 0px 15px 15px;
+    }
+    
+    .quoteLast .contentSectionLabel {
+        border-radius: 0px 0px 15px 15px;
+    }
+    
+    .quoteFirst .contentSectionLabel {
+        border-radius: 15px 15px 0px 0px;
+    }
+    
+    .contentVideoPlay{
+        background-image: url('../images/ico_video_play.png');
+        background-size: 100%;
+        margin: 0 auto;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 190px;
+        left: 100px;
+        -webkit-transform: skew(20deg);
+        -moz-transform: skew(20deg);
+        -o-transform: skew(20deg);
+    }
+    
+}
+
+
+/************ FOOTER ************/
+footer{
+    margin-top: -75px;
+    color: #FFF;
+    background-color: #333333;
+    width: 100%;
+    padding: 9px 10px;
+    height: 75x;
+    -webkit-align-content: center;
+    align-content: center;
+    @extend .flexrow;
+    
+    #copyrightInfo{
+        color: #FFF;
+        min-width: 175px;
+        
+        ul{
+            @extend .flexlistcollum;
+        }
+    }
+    
+    a{
+        color: #666;
+        display: block;
+    }
+    
+    a:hover{
+        color: #ED1D3B;
+    }
+    
+    
+    #footerSocialInfo{
+        
+        ul{
+            margin-right: 400px;
+            @extend .flexlistrow;
+        
+            li{
+
+                margin-right: 10px;
+            }
+        }
+    }
+    
+    
+    hr{
+        display: inline-block;
+        margin-top: 10px;
+        width: 100%;
+        border-color: #666;
+    }
+    
+    #footerLineJoin{
+        margin: 0px 4px;
+        min-width: 0px;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    #footerCopyRight{
+        margin-left: auto;
+        min-width: 395px;
+    }
+    
+}
+
+/***** SPECIAL ******/

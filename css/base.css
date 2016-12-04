@@ -1,0 +1,111 @@
+/*
+All the basic needs placed in here in order to make the import structure logical.
+*/
+/* 
+    Created on : Aug 31, 2016, 4:17:48 PM
+    Author     : Hemlock Devtop
+*/
+/********** VARIABLES **********/
+/********** GENERAL **********/
+html {
+  height: 100%; }
+
+body {
+  font-family: 'KIRO';
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e6e6e6+0,e6e6e6+70,c3c3c2+75,e6e6e6+100,9a9da1+100 */
+  background: #e6e6e6;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #e6e6e6 0%, #e6e6e6 70%, #c3c3c2 75%, #e6e6e6 100%, #9a9da1 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #e6e6e6 0%, #e6e6e6 70%, #c3c3c2 75%, #e6e6e6 100%, #9a9da1 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #e6e6e6 0%, #e6e6e6 70%, #c3c3c2 75%, #e6e6e6 100%, #9a9da1 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', endColorstr='#9a9da1',GradientType=0 );
+  /* IE6-9 */
+  height: 100%; }
+
+h1 {
+  font-family: 'KIRO EXTRA BOLD';
+  font-size: 32px; }
+
+h2 {
+  font-family: 'KIRO EXTRA BOLD';
+  padding: 5px;
+  margin: 0px; }
+
+input, textarea {
+  background-color: #e6e6e6;
+  border-radius: 5px;
+  font-size: 13px;
+  color: black;
+  padding: 3px;
+  width: 300px; }
+
+input {
+  height: 30px;
+  margin-bottom: 10px; }
+
+textarea {
+  max-width: 300px;
+  min-height: 250px;
+  max-height: 500px; }
+
+a, a:hover, a:active, a:visited {
+  text-decoration: none;
+  color: black; }
+
+a:hover {
+  color: #ee1d3a; }
+
+.flexbox, .flexrow, .flexlistrow, .flexcollum, .flexlistcollum, .flexMiddle, .flexRight, .flexCenter {
+  display: -webkit-flex;
+  display: flex; }
+
+.flexrow, .flexlistrow {
+  -webkit-flex-direction: row;
+  flex-direction: row; }
+
+.flexcollum, .flexlistcollum {
+  -webkit-flex-direction: column;
+  flex-direction: column; }
+
+.flexlistcollum {
+  list-style: none;
+  margin: 0px;
+  padding: 0px; }
+
+.flexlistrow {
+  list-style: none;
+  margin: 0px;
+  padding: 0px; }
+
+.flexMiddle {
+  -webkit-align-items: center;
+  align-items: center; }
+
+.flexRight {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end; }
+
+.flexCenter {
+  -webkit-justify-content: center;
+  justify-content: center; }
+
+.box32 {
+  height: 32px;
+  width: 32px; }
+
+.box24 {
+  height: 24px;
+  width: 24px; }
+
+.box16 {
+  height: 16px;
+  width: 16px; }
+
+.socialBox45 {
+  height: 33.75px;
+  width: 36px; }
+
+/*# sourceMappingURL=base.css.map */

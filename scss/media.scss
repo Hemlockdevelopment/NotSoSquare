@@ -1,0 +1,103 @@
+/*
+This file contains all the media refernces such as icons, fonts and other media content.
+*/
+/* 
+    Created on : Aug 31, 2016, 4:12:38 PM
+    Author     : Hemlock Devtop
+*/
+
+@import 'base.scss';
+
+/*********** FONTS ***********/
+@font-face {
+    font-family: 'KIRO';
+    src: url('../fonts/KIRO REGULAR.OTF'); 
+}
+
+@font-face {
+    font-family: 'KIRO BOLD';
+    src: url('../fonts/KIRO BOLD.OTF'); 
+}
+
+@font-face {
+    font-family: 'KIRO EXTRA BOLD';
+    src: url('../fonts/KIRO EXTRA BOLD.OTF'); 
+}
+
+@font-face {
+    font-family: 'KIRO ITALIC';
+    src: url('../fonts/KIRO ITALIC.OTF'); 
+}
+
+.bold{
+    font-family: 'KIRO BOLD';
+}
+
+.extra_bold{
+    font-family: 'KIRO EXTRA BOLD';
+}
+
+.italic{
+    font-family: 'KIRO ITALIC';    
+}
+
+/*********** ICONS ***********/
+
+.iconAbout{
+    @extend .box24;
+    background-image: url('../images/ico_about.png');
+    background-size: 100%;
+    margin-left: 15px;
+}
+
+.iconContact{
+    @extend .box24;
+    background-image: url('../images/ico_contact.png');
+    background-size: 100%;
+}
+
+.iconFacebook{
+    @extend .socialBox45;
+    background-image: url('../images/ico_facebook.png');
+    background-size: 100%;
+}
+
+.iconTwitter{
+    @extend .socialBox45;
+    background-image: url('../images/ico_twitter.png');
+    background-size: 100%;
+}
+
+
+.iconLinkedin{
+    @extend .socialBox45;
+    background-image: url('../images/ico_linkedin.png');
+    background-size: 100%;
+}
+
+.iconGooglePlus{
+    @extend .socialBox45;
+    background-image: url('../images/ico_googleplus.png');
+    background-size: 100%;
+}
+
+.iconYoutube{
+    @extend .socialBox45;
+    background-image: url('../images/ico_youtube.png');
+    background-size: 100%;
+}
+
+.iconMessageSent{
+    @extend .box24;
+    background-image: url('../images/ico_msg_send.png');
+    background-size: 100%;    
+}
+
+.iconMessageCancel{
+    @extend .box24;
+    background-image: url('../images/ico_msg_cancel.png');
+    background-size: 100%;       
+}
+
+
+/*********** IMAGES ***********/
